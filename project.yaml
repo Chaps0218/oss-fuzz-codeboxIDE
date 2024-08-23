@@ -1,0 +1,7 @@
+homepage: https://github.com/CodeboxIDE/codebox/tree/master
+language: javascript
+main_repo: https://github.com/CodeboxIDE/codebox/tree/master
+fuzzing_engines:
+- libfuzzer
+sanitizers:
+- none
