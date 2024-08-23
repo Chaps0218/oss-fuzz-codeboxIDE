@@ -2,7 +2,13 @@
 
 ## Introducción
 
-Este proyecto es desarrollado por [Nombre del Grupo de Trabajo]. Se enfoca en la integración de Codebox con OSS-Fuzz para mejorar la seguridad y estabilidad del proyecto a través de pruebas automatizadas de fuzzing.
+Este proyecto es desarrollado por el grupo número 8 de la materia de Desarrollo de Software Seguro, NRC 14943; aunque hubo una época en la que nos quiso cambiar de grupo :(. 
+**Integrantes**
+- Mathias Guevara
+- Christopher Iza
+- Shared Tinoco
+
+Este proyecto se enfoca en la integración de Codebox con OSS-Fuzz para comprender el uso de la herramienta y para intentar encontrar vulnerabilidades dentro del sistema.
 
 **¿Qué es Codebox?**
 
@@ -13,6 +19,10 @@ El IDE puede ejecutarse en tu escritorio (Linux o Mac), en tu servidor o en la n
 Codebox está construido con tecnologías web: node.js, javascript, html y less. El IDE tiene una arquitectura muy modular y extensible, que permite construir tus propias características mediante complementos. Codebox es el primer IDE abierto y modular capaz de ejecutarse tanto en el escritorio como en la nube (con soporte sin conexión).
 
 El proyecto es de código abierto bajo la licencia Apache 2.0. Un screencast del IDE está disponible en YouTube.
+
+**¿Qué se probó?**
+
+Dentro del código original del proyecto se realizaron pruebas para diferentes funciones dentro del sistema. Una de estas pruebas es la gestión de usuarios. En base a este archivo de pruebas se realizó el fuzz.
 
 ## Pasos para utilizar
 
