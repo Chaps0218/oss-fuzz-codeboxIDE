@@ -28,7 +28,7 @@ Dentro del código original del proyecto se realizaron pruebas para diferentes f
 
 1. **Clonar el repositorio de OSS-FUZZ** desde [este link](https://github.com/google/oss-fuzz) (haz clic en "este link" para ir al repositorio de OSS-FUZZ).
 
-2. **Crear una carpeta** llamada "codebox".
+2. **Crear una carpeta** llamada "codebox" dentro de la carpeta de "projects".
 
 3. **Pegar los archivos** de este repositorio en la carpeta recién creada.
 
