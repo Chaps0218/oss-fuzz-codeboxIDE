@@ -44,7 +44,7 @@ Dentro del código original del proyecto se realizaron pruebas para diferentes f
     py infra/helper.py build_image --pull codebox
     ```
 
-    Este comando construye una imagen de Docker personalizada para Codebox, asegurándose de que todas las dependencias necesarias estén presentes.
+    Este comando construye una imagen de Docker personalizada para Codebox, asegurándose de que todas las dependencias necesarias estén presentes. Esto crea, además, las imágenes necesarias para ejecutar oss-fuzz localmente.
 
 6. **Construir los fuzzers**:
 
@@ -52,7 +52,7 @@ Dentro del código original del proyecto se realizaron pruebas para diferentes f
     py infra/helper.py build_fuzzers codebox
     ```
 
-    Este comando compila los fuzzers para Codebox. Durante este proceso, se instalarán todas las dependencias del proyecto. Ten en cuenta que esto puede tomar algún tiempo.
+    Este comando compila los fuzzers para Codebox. Durante este proceso, se instalarán todas las dependencias del proyecto. Por este motivo, esto puede tomar algún tiempo.
 
 7. **Ejecutar el fuzzer**:
 
@@ -61,3 +61,5 @@ Dentro del código original del proyecto se realizaron pruebas para diferentes f
     ```
 
     Este comando ejecuta el fuzzer contra Codebox utilizando el corpus en `fuzz_workspace`, buscando posibles vulnerabilidades o errores en el código.
+
+Cabe recalcar que la construcción de esto se generará en la carpeta "build", y es ahí donde se pueden apreciar los archivos del código original, junto con los reportes de crash (en caso de que ocurra) y demás. En esta carpeta también se podrán apreciar los ejecutables de los fuzz, aunque en este caso se realizó solo 1.
